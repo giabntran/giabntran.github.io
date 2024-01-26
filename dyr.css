@@ -1,0 +1,127 @@
+:root {
+    --mainColor: #f191ac;
+    --lightColor: #fae6e7;
+    --darkColor: #333333;
+    --whiteColor: #f7eeed;
+}
+
+* {
+    /*betyr alle*/
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+
+    background-color: var(--lightColor);
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+    margin: 0;
+    padding: 0.5em;
+}
+
+nav ul a {
+    color: var(--mainColor);
+    text-decoration: none;
+    border: 1px solid var(--mainColor);
+    padding: 0.5em 0;
+    max-width: 5em;
+    width: 5em;
+    text-align: center;
+}
+
+nav ul a:hover {
+    background-color: var(--whiteColor);
+    font-weight: bold;
+}
+
+h1 {
+    color: var(--mainColor);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+
+    width: 60vw;
+    margin: auto;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    gap: 2em;
+}
+
+.left .imgKaniner {
+    position: relative;
+    top: -10%;
+
+    width: 100%;
+
+    aspect-ratio: 1500 / 1000;
+    background-image: url(kaniner.jpg);
+    background-size: 100% 100%;
+}
+
+.left .imgPandaer {
+    position: relative;
+    top: 9.5%;
+
+    width: 100%;
+
+    aspect-ratio: 1500 / 1000;
+    background-image: url(pandaer.jpg);
+    background-size: 100% 100%;
+}
+
+.left .imgHunder {
+    position: relative;
+    top: 15%;
+
+    width: 100%;
+
+    aspect-ratio: 1500 / 1000;
+    background-image: url(hunder.jpg);
+    background-size: 100% 100%;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 2em;
+}
+
+.quote {
+    position: relative;
+    left: 4em;
+    color: var(--mainColor);
+    border-left: 1px solid var(--darkColor);
+    padding-left: 1em;
+    margin-left: 1em;
+}
+
+.end {
+    text-align: center;
+    margin: 70px;
+}

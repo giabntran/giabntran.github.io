@@ -1,0 +1,95 @@
+:root {
+    --mainColor: #EF8ABC;
+    --lightColor: #eeb1c581;
+    --darkerColor: #3e6c1e;
+    --darkColor: #87ac6d;
+    --whiteColor: #FFFFF9;
+}
+
+body {
+    text-align: center;
+    background-color: var(--whiteColor);
+    width: 55vw;
+    padding: 30px;
+    margin: auto;
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 7em;
+    padding-left: 0;
+    font-family: 'Playpen Sans', cursive;
+}
+
+a {
+    color: var(--mainColor);
+    background-color: var(--whiteColor);
+    text-decoration: none;
+    padding: 1em;
+}
+
+a:hover {
+    color: var(--darkerColor);
+    background-color: var(--darkColor);
+    font-weight: bold;
+}
+
+.wrapper {
+    width: 30vw;
+    margin: auto;
+    padding: 30px;
+    background-color: var(--lightColor);
+}
+
+h1 {
+    color: var(--mainColor);
+    font-family: 'Playpen Sans', cursive;
+    margin-top: 20px;
+}
+
+img {
+    height: 200px;
+}
+
+p {
+    font-family: 'Playpen Sans', cursive;
+}
+
+button {
+    font-family: 'Playpen Sans', cursive;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+#showClicks {
+    margin-bottom: 0;
+}
+
+#outputPeony {
+    background: linear-gradient(130deg, var(--mainColor), #F9E4A5, var(--darkColor));
+    background-size: 200% 200%;
+    background-clip: text;
+ 
+    -webkit-animation: Animation 5s ease infinite;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+}
+@-webkit-keyframes Animation {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
