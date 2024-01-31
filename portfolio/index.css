@@ -124,7 +124,7 @@ body {
     }
 
     nav ul a:hover {
-        background-color: var(--lightColor);
+        color: var(--lightColor);
     }
 
     .logo {
